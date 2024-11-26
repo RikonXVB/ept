@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Смотреть аниме онлайн</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="anime-header">
+                <div class="anime-header-backdrop"></div>
+                <div class="anime-header-content">
+                    <div class="anime-poster">
+                        <img src="" alt="Постер" id="animePoster">
+                        <div class="anime-status" id="animeStatus"></div>
+                    </div>
+                    <div class="anime-info-block">
+                        <h1 class="anime-title" id="animeTitle"></h1>
+                        <h2 class="anime-title-en" id="animeTitleEn"></h2>
+                        <div class="anime-meta">
+                            <span class="anime-year" id="animeYear"></span>
+                            <span class="anime-type" id="animeType"></span>
+                            <span class="anime-episodes" id="animeEpisodes"></span>
+                        </div>
+                        <div class="anime-genres" id="animeGenres"></div>
+                        <div class="anime-description" id="animeDescription"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-player">
+                <div id="player">
+                    <!-- Плеер будет добавлен через JavaScript -->
+                </div>
+            </div>
+
+            <div class="episodes">
+                <h3>Эпизоды</h3>
+                <div class="episodes-list">
+                    <!-- Эпизоды будут добавлены через JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/player.js"></script>
+    <script src="/anime-details.js"></script>
+</body>
+</html> 

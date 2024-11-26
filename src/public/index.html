@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аниме Онлайн</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <h1 class="site-title">Жиндос</h1>
+            <div class="search-box">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    class="search-input" 
+                    placeholder="Поиск аниме..."
+                    autocomplete="off"
+                >
+                <button onclick="searchAnime()" class="search-button">
+                    <i class="fas fa-search"></i>
+                    <span>Поиск</span>
+                </button>
+            </div>
+        </header>
+        
+        <div class="filters-section">
+            <div class="filter-group">
+                <select id="genreFilter" class="filter-select" onchange="applyFilters()">
+                    <option value="">Все жанры</option>
+                    <option value="Приключения">Приключения</option>
+                    <option value="Фэнтези">Фэнтези</option>
+                    <option value="Экшен">Экшен</option>
+                    <option value="Комедия">Комедия</option>
+                    <option value="Драма">Драма</option>
+                    <option value="Романтика">Романтика</option>
+                </select>
+                <select id="yearFilter" class="filter-select" onchange="applyFilters()">
+                    <option value="">Все годы</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                </select>
+                <select id="seasonFilter" class="filter-select" onchange="applyFilters()">
+                    <option value="">Все сезоны</option>
+                    <option value="1">Зима</option>
+                    <option value="2">Весна</option>
+                    <option value="3">Лето</option>
+                    <option value="4">Осень</option>
+                </select>
+            </div>
+        </div>
+        
+        <main>
+            <div id="animeList" class="anime-grid"></div>
+        </main>
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+</html> 
