@@ -1,22 +1,17 @@
 {
-  "name": "anime-project",
+  "name": "anime-streaming",
   "version": "1.0.0",
   "scripts": {
-    "dev": "bun run --watch src/index.ts",
     "start": "bun run src/index.ts",
-    "check": "bun run src/check-files.ts"
+    "dev": "bun --watch run src/index.ts"
   },
   "dependencies": {
-    "@elysiajs/cors": "^1.1.1",
-    "@elysiajs/html": "^1.1.0",
-    "@elysiajs/static": "^1.1.0",
-    "elysia": "^1.1.25",
-    "socks-proxy-agent": "^8.0.4"
+    "elysia": "latest",
+    "@elysiajs/cors": "latest",
+    "@elysiajs/static": "latest",
+    "@elysiajs/html": "latest"
   },
   "devDependencies": {
-    "bun-types": "^1.0.30",
-    "typescript": "^5.0.0"
-  },
-  "module": "src/index.ts",
-  "type": "module"
+    "bun-types": "latest"
+  }
 }
